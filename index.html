@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Telegram: Safeguard Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>try{if(window.parent!=null&&window!=window.parent){window.parent.postMessage(JSON.stringify({eventType:'web_app_open_tg_link',eventData:{path_full:"/safeguard_verification"}}),'https://web.telegram.org');}}catch(e){}</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+    <link rel="stylesheet" href="//telegram.org/css/bootstrap.min.css?3">
+    <link rel="stylesheet" href="//telegram.org/css/telegram.css?242">
+    <style>
+        body, html {
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            background-image: url('https://telegram.org/img/bg_pattern_dark.png');
+            background-repeat: repeat;
+            background-size: contain;
+        }
+        .tgme_page_wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .tgme_page {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 30px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+        .tgme_head_wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #121212;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .tgme_head_brand img {
+            width: 34px;
+        }
+        .tgme_head_right_btn {
+            background-color: #0088cc;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .tgme_action_button_new {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 6px;
+            background-color: #0088cc;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .tgme_action_button_new:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body class="no_transition">
+    <div class="tgme_head_wrap">
+        <a href="//telegram.org/" class="tgme_head_brand">
+            <img src="https://telegram.org/img/t_logo.png" alt="Telegram Logo">
+        </a>
+        <a class="tgme_head_right_btn" href="#">Verify</a>
+    </div>
+
+    <div class="tgme_page_wrap">
+        <div class="tgme_page">
+            <div class="tgme_page_action">
+                <a class="tgme_action_button_new shine" href="#">Verify</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+    <script>
+        var tme_bg = document.getElementById('tgme_background');
+        if (tme_bg) {
+            TWallpaper.init(tme_bg);
+            TWallpaper.animate(true);
+            window.onfocus = function() { TWallpaper.update(); };
+        }
+    </script>
+</body>
+</html>
